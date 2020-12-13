@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>はじめてのHTML</title>
   <style>
-    h1 {
-       color: red;
-       }
+    .red {
+      color: red;
+    }
   </style>
 </head>
 <body>
@@ -38,5 +38,87 @@
       </li>
     </ul>
     <!-- ul > li > ul > liで入れ子にすることができる。 -->
+    <dl>
+      <dt>言葉1</dt>
+      <dd>説明1</dd>
+      <dt>言葉2</dt>
+      <dd>説明2</dd>
+      <dt>言葉3</dt>
+      <dd>説明3</dd>
+    </dl>
+    <h1>見出し　レベル1</h1>
+    <h2>見出し　レベル2</h2>
+    <h3>見出し　レベル3</h3>
+    <h4>見出し　レベル4</h4>
+    <h5>見出し　レベル5</h5>
+    <h6>見出し　レベル6</h6>
+    <!-- 見出しは数字が小さいほど優先度が上がる。見出しレベルは飛ばしてはならない。見出しレベルより高いレベルを配下に置くことはダメ。 -->
+    <!-- <h1></h1>は1つの記事で1つだけしか利用できない。 -->
+    <!-- フォントサイズを調整する目的では見出しは使わない -->
+    <img src="dog.jpg" width="300" height="200" alt="犬の画像">
+    <!-- 相対パスでの画像指定 -->
+    <hr>
+    <img src="https://dl.dropboxusercontent.com/s/hgql4ez48vtzcr7/dog.jpg"  width="300" height="200" alt="犬の画像">
+    <!-- 絶対パスでの画像指定 -->
+    <a href="https://blog.proglus.jp/">プログラミング入門ナビ</a>
+    <br>
+    <a href="https://blog.proglus.jp/" target="_blank" rel="noopener">プログラミング入門ナビ</a>
+    <br>
+    <!-- target="_blank" rel="noopener"を指定すると別タブでの表示になる。 -->
+    <a href="exercise-list.html">エクササイズリストへ移動</a>
+    <br>
+    <p>家に帰ったらすぐに
+      <strong>手洗いをしましょう。</strong>
+    </p>
+    <!-- 重要な文字を強調できる<strong></strong>。 -->
+    <!-- 文字の表現を目的に使わないこと。表現は全部cssでやること。 -->
+    <p>
+      <small>&copy;2020 Yuta Nakamura.</small>
+    </p>
+    <!-- &copy;でコピーライトを示す◯Cマークが表示できる。文字実態参照という。W3Cにサイトを参照すると色々わかる。 -->
+    <hr>
+    <header>
+      <h1>グループ化の練習</h1>
+      <nav>
+        <ul>
+          <li><a href="#">エンジニアへの道</a></li>
+          <li><a href="#">プログラミング入門</a></li>
+          <li><a href="#">ニュース</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2>グループ化を学ぶのにおすすめのサイト10選！</h2>
+        <p>グループ化を学べるサイトを10個紹介します。</p>
+      </article>
+      <!-- <article></article>は囲んだ部分だけで完結する要素をまとめる。 -->
+
+      <section>
+        <h2>関連記事</h2>
+        <ul>
+          <li><a href="#">関連記事1</a></li>
+          <li><a href="#">関連記事2</a></li>
+          <li><a href="#">関連記事3</a></li>
+        </ul>
+      </section>
+      <!-- <section></section>は外部記事へのリンクなど囲んだ範囲外にも飛んでいく要素を囲む。 -->
+    </main>
+
+    <aside>
+      <h2>広告</h2>
+      <p>前ショップ対象エントリーでポイント5倍！</p>
+    </aside>
+    <!-- <aside></aside>は関連性の低い記事をまとめる要素。 -->
+
+    <footer>
+      <p><small>&copy;2020 Yuta Nakamura.</small></p>
+    </footer>
+    <p>私は<span class="red">HTML</span>と<span class="red">CSS</span>を学びます。</p>
+    <hr>
+    これは<div>div</div>です。
+    これは<span>span</span>です。
+    <!-- <div></div>はブロック要素。<span></span>はインライン要素。 -->
 </body>
 </html>
