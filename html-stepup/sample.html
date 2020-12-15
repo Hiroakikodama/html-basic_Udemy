@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>姓</th>
+      <th>名</th>
+    </tr>
+    <tr>
+      <td>山田</td>
+      <td>太郎</td>
+    </tr>
+    <tr>
+      <td>田中</td>
+      <td>花子</td>
+    </tr>
+  </table>
+  <!-- <tr></tr>はtable row=テーブルの行を定義する -->
+  <!-- <td></td>はtable date sell=テーブルのセルを定義 -->
+  <hr>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ヘッダ1</th>
+        <th>ヘッダ2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>ボディ1</td>
+        <td>ボディ2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>フッター1</td>
+        <td>フッター2</td>
+      </tr>
+    </tfoot>
+  </table>
+  <!-- thead,tbody,tfootは要素を示すので、別似なくてもOK。あった方が親切。 -->
+  <hr>
+
+  <table border="1">
+    <caption>キャプション</caption>
+    <tr>
+      <td>データ1</td>
+      <td>データ2</td>
+      <td>データ3</td>
+    </tr>
+  </table>
+  <hr>
+  <table border="10">
+    <caption>行（横方向）方向に結合</caption>
+    <tr>
+      <th colspan="3">セルを結合</th>
+    </tr>
+    <tr>
+      <td>コンテンツ1</td>
+      <td>コンテンツ2</td>
+      <td>コンテンツ3
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <table border="1">
+    <caption>列方向（縦方向）に結合</caption>
+    <tr>
+      <td rowspan="3">セルを結合</td>
+      <td>コンテンツ1</td>
+    </tr>
+    <tr>
+      <td>コンテンツ2</td>
+    </tr>
+    <tr>
+      <td>コンテンツ3</td>
+    </tr>
+  </table>
+
+</body>
+</html>
